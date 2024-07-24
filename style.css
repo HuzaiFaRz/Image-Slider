@@ -47,6 +47,9 @@ main {
   object-fit: cover;
   object-position: center;
 }
+
+
+
 .slider-btns {
   position: absolute;
   top: 50%;
