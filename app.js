@@ -53,7 +53,7 @@ const sliderImages = document.querySelectorAll(".slider-img");
 
 const nextSlideImg = () => {
   sliderImagesIndex++;
-  if (sliderImagesIndex < sliderImages.length) {
+  if (sliderImagesIndex < sliderImages.length - 1) {
     sliderImages.forEach((e) => {
       gsap.to(e, {
         x: `${sliderImagesIndex * -100}%`,
@@ -70,11 +70,11 @@ sliderNextButton.addEventListener("click", nextSlideImg);
 
 const prevSlideImg = () => {
   sliderImagesIndex--;
-  if (sliderImagesIndex >= 0) {
+  if (sliderImagesIndex > sliderImages.length - 1) {
     console.log(true);
     sliderImages.forEach((e) => {
       gsap.to(e, {
-        x: `${sliderImagesIndex * -100}%`,
+        x: `${sliderImagesIndex * 100}%`,
         duration: 0.5,
         ease: Expo.easeInOut,
       });
@@ -107,3 +107,13 @@ sliderPrevButton.addEventListener("click", prevSlideImg);
 //     });
 //   }
 // };
+
+
+
+
+
+
+
+
+
+console.log("fdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfds");
