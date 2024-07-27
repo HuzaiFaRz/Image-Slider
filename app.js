@@ -56,10 +56,12 @@ const nextSlideImg = () => {
     sliderImages.forEach((e) => {
       gsap.to(e, {
         x: `${sliderImagesIndex * -100}%`,
-        duration: 0.3,
+        duration: 0.5,
         ease: Expo.easeInOut,
       });
     });
+  } else {
+    sliderImagesIndex = 0;
   }
 };
 
