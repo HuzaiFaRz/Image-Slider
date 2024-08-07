@@ -7,11 +7,10 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +29,7 @@ main {
   height: 100%;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .slider-item {
