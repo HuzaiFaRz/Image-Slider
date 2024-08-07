@@ -76,3 +76,14 @@ main {
   font-size: 50px;
   color: white;
 }
+
+@media (max-width: 500px) {
+  .slider-next-btn,
+  .slider-prev-btn {
+    padding: 0 5px;
+  }
+  .slider-next-btn > i,
+  .slider-prev-btn > i {
+    font-size: 30px;
+  }
+}
