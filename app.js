@@ -3,11 +3,11 @@ const sliderNextButton = document.querySelector(".slider-next-btn");
 const sliderPrevButton = document.querySelector(".slider-prev-btn");
 let imageIndex = 0;
 const imagesArray = [
-  "1-Img.jpg",
-  "2-Img.jpg",
-  "3-Img.jpg",
-  "4-Img.jpg",
-  "5-Img.jpg",
+  "./images/1-Img.jpg",
+  "./images/2-Img.jpg",
+  "./images/3-Img.jpg",
+  "./images/4-Img.jpg",
+  "./images/5-Img.jpg",
 ];
 for (let i = 0; i < imagesArray.length; i++) {
   let slideDiv = document.createElement("div");
